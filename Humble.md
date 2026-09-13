@@ -7,8 +7,8 @@ After=network.target
 
 [Service]
 Type=simple
-User=<your-user>
-ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash && source /home/<user>/mars_rover_ws/install/setup.bash && ros2 launch rover_bringup bringup.launch.py'
+User=rover
+ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash && source /home/rover/mars_rover_ws/install/setup.bash && ros2 launch rover_bringup bringup.launch.py'
 Restart=on-failure
 RestartSec=3
 
