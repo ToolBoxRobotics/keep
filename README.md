@@ -18,3 +18,10 @@ sudo apt update && sudo apt full-upgrade
 sudo reboot
 ```
 
+### Install Visual Studio Code (VS Code) on Ubuntu 22.04 for the ARM64 architecture
+
+```bash
+wget -O vscode-arm64.deb https://visualstudio.com
+sudo apt install ./vscode-arm64.deb
+
+```
